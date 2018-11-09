@@ -1,0 +1,39 @@
+version: "3"
+services:
+  redis:
+    image: redis:4-alpine
+    command: redis-server --bind 0.0.0.0
+    ports:
+      - "6379:6379"
+
+  # Agent container
+  ddagent:
+    image: datadog/docker-dd-agent
+    environment:
+      - DD_APM_ENABLED=true
+      - DD_BIND_HOST=0.0.0.0
+      - DD_API_KEY=[DATADOG_API_KEY]
+    ports:
+      - "8126:8126"
+
+  alpine:
+    build:
+      context: ./
+      dockerfile: alpine.dockerfile
+    command: wait-for-it redis:6379 -- wait-for-it ddagent:8126 -- dotnet /app/dd-trace-csharp-linux-example.dll
+    environment:
+      - DD_TRACE_AGENT_HOSTNAME=ddagent
+    depends_on:
+      - ddagent
+      - redis
+
+  debian:
+    build:
+      context: ./
+      dockerfile: debian.dockerfile
+    command: wait-for-it redis:6379 -- wait-for-it ddagent:8126 -- dotnet /app/dd-trace-csharp-linux-example.dll
+    environment:
+      - DD_TRACE_AGENT_HOSTNAME=ddagent
+    depends_on:
+      - ddagent
+      - redis

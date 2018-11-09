@@ -1,0 +1,11 @@
+/Users/jay.dave/Desktop/Projects/dd_linux_docker/bin/Debug/netcoreapp2.1/dd-trace-csharp-linux-example.deps.json
+/Users/jay.dave/Desktop/Projects/dd_linux_docker/bin/Debug/netcoreapp2.1/dd-trace-csharp-linux-example.runtimeconfig.json
+/Users/jay.dave/Desktop/Projects/dd_linux_docker/bin/Debug/netcoreapp2.1/dd-trace-csharp-linux-example.runtimeconfig.dev.json
+/Users/jay.dave/Desktop/Projects/dd_linux_docker/bin/Debug/netcoreapp2.1/dd-trace-csharp-linux-example.dll
+/Users/jay.dave/Desktop/Projects/dd_linux_docker/bin/Debug/netcoreapp2.1/dd-trace-csharp-linux-example.pdb
+/Users/jay.dave/Desktop/Projects/dd_linux_docker/obj/Debug/netcoreapp2.1/dd-trace-csharp-linux-example.csprojAssemblyReference.cache
+/Users/jay.dave/Desktop/Projects/dd_linux_docker/obj/Debug/netcoreapp2.1/dd-trace-csharp-linux-example.csproj.CoreCompileInputs.cache
+/Users/jay.dave/Desktop/Projects/dd_linux_docker/obj/Debug/netcoreapp2.1/dd-trace-csharp-linux-example.AssemblyInfoInputs.cache
+/Users/jay.dave/Desktop/Projects/dd_linux_docker/obj/Debug/netcoreapp2.1/dd-trace-csharp-linux-example.AssemblyInfo.cs
+/Users/jay.dave/Desktop/Projects/dd_linux_docker/obj/Debug/netcoreapp2.1/dd-trace-csharp-linux-example.dll
+/Users/jay.dave/Desktop/Projects/dd_linux_docker/obj/Debug/netcoreapp2.1/dd-trace-csharp-linux-example.pdb
