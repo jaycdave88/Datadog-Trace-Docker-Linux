@@ -13,7 +13,7 @@ FROM microsoft/dotnet:2.1-sdk-alpine
 RUN apk add bash curl libc6-compat
 
 RUN mkdir -p /opt/datadog
-RUN curl -L https://github.com/DataDog/dd-trace-csharp/releases/download/v0.5.0-beta/datadog-dotnet-apm-0.5.0.tar.gz | \
+RUN curl -L https://github.com/DataDog/dd-trace-dotnet/releases/download/v1.13.0/datadog-dotnet-apm-1.13.0.tar.gz | \
     tar xzf - -C /opt/datadog
 
 ENV CORECLR_ENABLE_PROFILING=1
